@@ -12,7 +12,7 @@ const doctorSchema = new mongoose.Schema({
   availableIn: String,
   doctorOfTheHour: Boolean,
   image: {
-    type: "/doctor-placeholder.jpeg",
+    type: "String",
   }
 });
 
