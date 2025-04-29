@@ -17,4 +17,8 @@ mongoose.connect('mongodb://127.0.0.1:27017/apollo', {
 app.use('/api/doctors', doctorRoutes);
 
 const PORT = 5000;
+
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+app.listen((req,resp)=>{
+  resp.send("hello there");
+})
